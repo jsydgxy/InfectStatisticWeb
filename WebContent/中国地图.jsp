@@ -103,6 +103,8 @@
           <label for="textfield">输入日期:</label>
           <input type="text" name="textfield" id="textfield" placeholder="如:2020-02-01">
           <input type="submit" name="submit" id="submit" value="提交">
+          <% String d;
+          if (d=request.getParameter("text"))  %>
         </div>
       </div>
 
@@ -240,8 +242,9 @@
                         }  
                     },  
                     data:mydata  //数据
-                }]  
-            };  
+                }]
+                
+                }
 			
 			//疑似病例地图
 			var optionMap2 = {  
@@ -292,5 +295,10 @@
         //使用制定的配置项和数据显示图表
         myChart.setOption(optionMap);
 		myChart2.setOption(optionMap2);
+		
+		myChart.on('click', function (params){
+            if(params.name='新疆')
+            	window.open("湖北详情页.html");
+        }
         </script>
 </html>

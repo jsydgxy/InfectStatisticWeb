@@ -78,8 +78,7 @@
       
        <div id="u3" class="ax_default _统计数据">
         <div id="u3_div" class=""></div>
-        <% String data="100"; %>
-        <input id="u3_input" type="text" value=<%=data %> class="u3_input"/>
+        <input id="u3_input" type="text" value=<%=request.getParameter() %> class="u3_input"/>
       </div>
 
       <!-- Unnamed (文本框) -->
@@ -91,7 +90,7 @@
       <!-- Unnamed (文本框) -->
       <div id="u5" class="ax_default _统计数据">
         <div id="u5_div" class=""></div>
-        <input id="u5_input" type="text" value="-2926" class="u5_input"/>
+        <input id="u5_input" type="text" value=<%=request.getParameter() %> class="u5_input"/>
       </div>
 
       <!-- Unnamed (文本框) -->
@@ -103,7 +102,7 @@
       <!-- Unnamed (文本框) -->
       <div id="u7" class="ax_default _统计数据">
         <div id="u7_div" class=""></div>
-        <input id="u7_input" type="text" value="65914" class="u7_input"/>
+        <input id="u7_input" type="text" value=<%=request.getParameter() %> class="u7_input"/>
       </div>
 
       <!-- Unnamed (文本框) -->
@@ -115,7 +114,7 @@
       <!-- Unnamed (文本框) -->
       <div id="u9" class="ax_default _统计数据">
         <div id="u9_div" class=""></div>
-        <input id="u9_input" type="text" value="+318" class="u9_input"/>
+        <input id="u9_input" type="text" value=<%=request.getParameter() %> class="u9_input"/>
       </div>
 
       <!-- Unnamed (文本框) -->
@@ -133,7 +132,7 @@
       <!-- Unnamed (文本框) -->
       <div id="u12" class="ax_default _统计数据">
         <div id="u12_div" class=""></div>
-        <input id="u12_input" type="text" value="26472" class="u12_input"/>
+        <input id="u12_input" type="text" value=<%=request.getParameter() %> class="u12_input"/>
       </div>
 
       <!-- Unnamed (文本框) -->
@@ -151,19 +150,19 @@
       <!-- Unnamed (文本框) -->
       <div id="u15" class="ax_default _统计数据">
         <div id="u15_div" class=""></div>
-        <input id="u15_input" type="text" value="2682" class="u15_input"/>
+        <input id="u15_input" type="text" value=<%=request.getParameter() %> class="u15_input"/>
       </div>
 
       <!-- Unnamed (文本框) -->
       <div id="u16" class="ax_default _统计数据">
         <div id="u16_div" class=""></div>
-        <input id="u16_input" type="text" value="+3203" class="u16_input"/>
+        <input id="u16_input" type="text" value=<%=request.getParameter() %> class="u16_input"/>
       </div>
 
       <!-- Unnamed (文本框) -->
       <div id="u17" class="ax_default _统计数据">
         <div id="u17_div" class=""></div>
-        <input id="u17_input" type="text" value="+41" class="u17_input"/>
+        <input id="u17_input" type="text" value=<%=request.getParameter() %> class="u17_input"/>
       </div>
 
       <!-- Unnamed (动态面板) -->
@@ -268,7 +267,8 @@ option = {
         type: 'value'
     },
     series: [{
-        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        data: [<%=request.getParameter() %>, <%=request.getParameter() %>, <%=request.getParameter() %>, <%=request.getParameter() %>,
+        	<%=request.getParameter() %>, <%=request.getParameter() %>, <%=request.getParameter() %>],
         type: 'line'
     }]
 };
@@ -291,7 +291,8 @@ option = {
         type: 'value'
     },
     series: [{
-        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        data: [<%=request.getParameter() %>, <%=request.getParameter() %>, <%=request.getParameter() %>, <%=request.getParameter() %>,
+        	<%=request.getParameter() %>, <%=request.getParameter() %>, <%=request.getParameter() %>],
         type: 'line'
     }]
 };
@@ -314,7 +315,8 @@ option = {
         type: 'value'
     },
     series: [{
-        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        data: [<%=request.getParameter() %>, <%=request.getParameter() %>, <%=request.getParameter() %>, <%=request.getParameter() %>,
+        	<%=request.getParameter() %>, <%=request.getParameter() %>, <%=request.getParameter() %>],
         type: 'line'
     }]
 };
@@ -337,7 +339,8 @@ option = {
         type: 'value'
     },
     series: [{
-        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        data: [<%=request.getParameter() %>, <%=request.getParameter() %>, <%=request.getParameter() %>, <%=request.getParameter() %>,
+        	<%=request.getParameter() %>, <%=request.getParameter() %>, <%=request.getParameter() %>],
         type: 'line'
     }]
 };
