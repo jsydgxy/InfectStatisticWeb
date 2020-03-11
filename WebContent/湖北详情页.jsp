@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<%@ page language="java" contentType="text/html;charset=utf-8"
+    pageEncoding="utf-8" %>
+<!DOCTYPE html>
 <html>
   <head>
     <title>湖北详情页</title>
@@ -76,7 +78,8 @@
       
        <div id="u3" class="ax_default _统计数据">
         <div id="u3_div" class=""></div>
-        <input id="u3_input" type="text" value="36760" class="u3_input"/>
+        <% String data="100"; %>
+        <input id="u3_input" type="text" value=<%=data %> class="u3_input"/>
       </div>
 
       <!-- Unnamed (文本框) -->
