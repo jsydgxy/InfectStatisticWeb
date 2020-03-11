@@ -163,25 +163,45 @@
      return Math.round(Math.random()*500);  
 } 
 		var mydata = [  
-                {name: '北京',value: '100' },{name: '天津',value: randomData() },  
-                {name: '上海',value: randomData() },{name: '重庆',value: randomData() },  
-                {name: '河北',value: randomData() },{name: '河南',value: randomData() },  
-                {name: '云南',value: randomData() },{name: '辽宁',value: randomData() },  
-                {name: '黑龙江',value: randomData() },{name: '湖南',value: randomData() },  
-                {name: '安徽',value: randomData() },{name: '山东',value: randomData() },  
-                {name: '新疆',value: randomData() },{name: '江苏',value: randomData() },  
-                {name: '浙江',value: randomData() },{name: '江西',value: randomData() },  
-                {name: '湖北',value: randomData() },{name: '广西',value: randomData() },  
-                {name: '甘肃',value: randomData() },{name: '山西',value: randomData() },  
-                {name: '内蒙古',value: randomData() },{name: '陕西',value: randomData() },  
-                {name: '吉林',value: randomData() },{name: '福建',value: randomData() },  
-                {name: '贵州',value: randomData() },{name: '广东',value: randomData() },  
-                {name: '青海',value: randomData() },{name: '西藏',value: randomData() },  
-                {name: '四川',value: randomData() },{name: '宁夏',value: randomData() },  
-                {name: '海南',value: randomData() },{name: '台湾',value: randomData() },  
-                {name: '香港',value: randomData() },{name: '澳门',value: randomData() }  
+                {name: '北京',value: <%=qzdata %> },{name: '天津',value: <%=qzdata %> },  
+                {name: '上海',value: <%=qzdata %> },{name: '重庆',value: <%=qzdata %> },  
+                {name: '河北',value: <%=qzdata %> },{name: '河南',value: <%=qzdata %> },  
+                {name: '云南',value: <%=qzdata %> },{name: '辽宁',value: <%=qzdata %> },  
+                {name: '黑龙江',value: <%=qzdata %> },{name: '湖南',value: <%=qzdata %> },  
+                {name: '安徽',value: <%=qzdata %> },{name: '山东',value: <%=qzdata %> },  
+                {name: '新疆',value: <%=qzdata %> },{name: '江苏',value: <%=qzdata %> },  
+                {name: '浙江',value: <%=qzdata %> },{name: '江西',value: <%=qzdata %> },  
+                {name: '湖北',value: <%=qzdata %> },{name: '广西',value: <%=qzdata %> },  
+                {name: '甘肃',value: <%=qzdata %> },{name: '山西',value: <%=qzdata %> },  
+                {name: '内蒙古',value: <%=qzdata %> },{name: '陕西',value: <%=qzdata %> },  
+                {name: '吉林',value: <%=qzdata %> },{name: '福建',value: <%=qzdata %> },  
+                {name: '贵州',value: <%=qzdata %> },{name: '广东',value: <%=qzdata %> },  
+                {name: '青海',value: <%=qzdata %> },{name: '西藏',value: <%=qzdata %> },  
+                {name: '四川',value: <%=qzdata %> },{name: '宁夏',value: <%=qzdata %> },  
+                {name: '海南',value: <%=qzdata %> },{name: '台湾',value: <%=qzdata %> },  
+                {name: '香港',value: <%=qzdata %> },{name: '澳门',value: <%=qzdata %> }  
             ];
-			var optionMap = {  
+		var mydata2 = [  
+            {name: '北京',value: <%=ysdata %> },{name: '天津',value: <%=ysdata %> },  
+            {name: '上海',value: <%=ysdata %> },{name: '重庆',value: <%=ysdata %> },  
+            {name: '河北',value: <%=ysdata %> },{name: '河南',value: <%=ysdata %> },  
+            {name: '云南',value: <%=ysdata %> },{name: '辽宁',value: <%=ysdata %> },  
+            {name: '黑龙江',value: <%=ysdata %> },{name: '湖南',value: <%=ysdata %> },  
+            {name: '安徽',value: <%=ysdata %> },{name: '山东',value: <%=ysdata %> },  
+            {name: '新疆',value: <%=ysdata %> },{name: '江苏',value: <%=ysdata %> },  
+            {name: '浙江',value: <%=ysdata %> },{name: '江西',value: <%=ysdata %> },  
+            {name: '湖北',value: <%=ysdata %> },{name: '广西',value: <%=ysdata %> },  
+            {name: '甘肃',value: <%=ysdata %> },{name: '山西',value: <%=ysdata %> },  
+            {name: '内蒙古',value: <%=ysdata %> },{name: '陕西',value: <%=ysdata %> },  
+            {name: '吉林',value: <%=ysdata %> },{name: '福建',value: <%=ysdata %> },  
+            {name: '贵州',value: <%=ysdata %> },{name: '广东',value: <%=ysdata %> },  
+            {name: '青海',value: <%=ysdata %> },{name: '西藏',value: <%=ysdata %> },  
+            {name: '四川',value: <%=ysdata %> },{name: '宁夏',value: <%=ysdata %> },  
+            {name: '海南',value: <%=ysdata %> },{name: '台湾',value: <%=ysdata %> },  
+            {name: '香港',value: <%=ysdata %> },{name: '澳门',value: <%=ysdata %> }  
+        ];
+		//确诊病例地图	
+		var optionMap = {  
                 backgroundColor: '#FFFFFF',  
                 title: {  
                     text: '全国地图大数据',  
@@ -222,12 +242,55 @@
                     data:mydata  //数据
                 }]  
             };  
+			
+			//疑似病例地图
+			var optionMap2 = {  
+	                backgroundColor: '#FFFFFF',  
+	                title: {  
+	                    text: '全国地图大数据',  
+	                    subtext: '',  
+	                    x:'center'  
+	                },  
+	                tooltip : {  
+	                    trigger: 'item'  
+	                },  
+	                
+	                //左侧小导航图标
+	                visualMap: {  
+	                    show : true,  
+	                    x: 'left',  
+	                    y: 'center',  
+	                    splitList: [   
+	                        {start: 500, end:600},{start: 400, end: 500},  
+	                        {start: 300, end: 400},{start: 200, end: 300},  
+	                        {start: 100, end: 200},{start: 0, end: 100},  
+	                    ],  
+	                    color: ['#ff0000', '#ff3322', '#ff6644','#ff9966', '#ffcc88', '#ffeeaa']  
+	                },  
+	                
+	                //配置属性
+	                series: [{  
+	                    name: '数据',  
+	                    type: 'map',  
+	                    mapType: 'china',   
+	                    roam: true,  
+	                    label: {  
+	                        normal: {  
+	                            show: true  //省份名称  
+	                        },  
+	                        emphasis: {  
+	                            show: false  
+	                        }  
+	                    },  
+	                    data:mydata2  //数据
+	                }]  
+	            };  
         //初始化echarts实例
         var myChart = echarts.init(document.getElementById('u1_state0'));
 		var myChart2 = echarts.init(document.getElementById('u1_state1'));
 
         //使用制定的配置项和数据显示图表
         myChart.setOption(optionMap);
-		myChart2.setOption(optionMap);
+		myChart2.setOption(optionMap2);
         </script>
 </html>
